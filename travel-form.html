@@ -13,27 +13,172 @@
 </head>
 
 <body>
-    <div></div>
     <div class="main-wrapper">
         <div class="container">
             <h1 class="title">Find the right travel insurance for your needs</h1>
             <div class="main-navigation">
-                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <ul class="nav nav-pills" id="pills-tab" role="tablist">
                     <li class="nav-item">
-                        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
+                        <a class="nav-link active" id="pills-NewTrip-tab" data-toggle="pill" href="#pills-NewTrip" role="tab" aria-controls="pills-NewTrip" aria-selected="true">New trip</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</a>
+                        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-Hajj" role="tab" aria-controls="pills-profile" aria-selected="false">Hajj / Omra</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
+                        <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-Arab" role="tab" aria-controls="pills-contact" aria-selected="false">Arab countries  gcc</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-Schengen-tab" data-toggle="pill" href="#pills-Schengen" role="tab" aria-controls="pills-Schengen" aria-selected="false">Schengen countries</a>
                     </li>
                 </ul>
             </div>
             <div class="tab-content" id="pills-tabContent">
-                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">...</div>
-                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
-                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+                <div class="tab-pane fade show active" id="pills-NewTrip" role="tabpanel" aria-labelledby="pills-NewTrip-tab">
+                    <h1 class="sub-title">
+                        Does your trip include visits to any of these countries?
+                        <p>Please select countries that included in your trip from below</p>
+                    </h1>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <label class="checkbox">
+                                    <input class="country-checkbox" name="name here" id="idhere" type="checkbox" />
+                                    <div class="country-label">
+                                        <span>USA</span>
+                                        <img src="images/usa.png" />
+                                    </div>
+                                </label>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="checkbox">
+                                    <input class="country-checkbox" name="name here" id="idhere" type="checkbox" />
+                                    <div class="country-label">
+                                        <span>Canada</span>
+                                        <img src="images/canada.png" />
+                                    </div>
+                                </label>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="checkbox">
+                                    <input class="country-checkbox" name="name here" id="idhere" type="checkbox" />
+                                    <div class="country-label">
+                                        <span>Australia</span>
+                                        <img src="images/australia.png" />
+                                    </div>
+                                </label>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="checkbox">
+                                    <input class="country-checkbox" name="name here" id="idhere" type="checkbox" />
+                                    <div class="country-label">
+                                        <span>Japan</span>
+                                        <img src="images/japan.png" />
+                                    </div>
+                                </label>
+                        </div>
+                    </div>
+                    <div class="row form-fields">
+                        <form class="needs-validation" novalidate>
+                            <div class="main-contact-details">
+                                <h1 class="sub-title">Main contact details</h1>
+                                <div class="form-row">
+                                    <div class="col-md-4 mb-3">
+                                        <label for="validationCustom01">Name</label>
+                                        <input type="text" class="form-control" id="validationCustom01" placeholder="Name" value="Mark" required>
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <label for="validationCustom02">Phone number</label>
+                                        <input type="text" class="form-control" id="validationCustom02" placeholder="Phone number" value="Otto" required>
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <label for="validationCustomUsername">Email</label>
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                            </div>
+                                            <input type="text" class="form-control" id="validationCustomUsername" placeholder="Email" aria-describedby="inputGroupPrepend" required>
+                                            <div class="invalid-feedback">
+                                                Please write your Email.
+                                            </div>
+                                            <div class="valid-feedback">
+                                                Looks good!
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <h1 class="sub-title">Trip details</h1>
+                                <div class="col-md-6 txt-align-left"></div>
+                                <div class="col-md-6 txt-align-left">
+                                    <h2 class="icon-title">
+                                        <img src="images/icon-traveler.png" /> Travelers
+                                        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target=".bd-example-modal-lg">+ Add</button>
+                                    </h2>
+                                    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                      <span aria-hidden="true">×</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="travelers-list">
+                                        <li>
+                                            <span class="traveler">Traveler 1 : </span>
+                                            <span class="traveler-date-txt">Date of birth</span>
+                                            <span class="traveler-date">1-1-2020</span>
+                                        </li>
+                                        <li>
+                                            <span class="traveler">Traveler 2 : </span>
+                                            <span class="traveler-date-txt">Date of birth</span>
+                                            <span class="traveler-date">20-10-2000</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="btn-submit-form">
+                                <button class="btn btn-primary" type="submit">Show Me Quotes</button>
+                            </div>
+                        </form>
+                        <script>
+                            (function() {
+                                'use strict';
+                                window.addEventListener('load', function() {
+                                    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                                    var forms = document.getElementsByClassName('needs-validation');
+                                    // Loop over them and prevent submission
+                                    var validation = Array.prototype.filter.call(forms, function(form) {
+                                        form.addEventListener('submit', function(event) {
+                                            if (form.checkValidity() === false) {
+                                                event.preventDefault();
+                                                event.stopPropagation();
+                                            }
+                                            form.classList.add('was-validated');
+                                        }, false);
+                                    });
+                                }, false);
+                            })();
+                        </script>
+                    </div>
+                </div>
+                <div class="tab-pane" id="pills-Hajj" role="tabpanel" aria-labelledby="pills-Hajj-tab">
+                    Hajj / Omra
+                </div>
+                <div class="tab-pane" id="pills-Arab" role="tabpanel" aria-labelledby="pills-Arab-tab">
+                    Arab countries
+                </div>
+                <div class="tab-pane" id="pills-Schengen" role="tabpanel" aria-labelledby="pills-Schengen-tab">
+                    Schengen
+                </div>
             </div>
         </div>
     </div>
